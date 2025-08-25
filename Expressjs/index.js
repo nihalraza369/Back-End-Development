@@ -23,7 +23,6 @@ app.get('/about', function (req, res, next) {
     next(new Error('Something went wrong'));
 });
 
-// Error handling middleware (4 parameters zaroori hain!)
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');

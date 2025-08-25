@@ -1,2 +1,4 @@
 nihal_copy.txt
 nihal.txt
+.gitignore
+node_modules/
